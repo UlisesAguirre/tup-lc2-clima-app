@@ -126,17 +126,7 @@ main p {
 .negrita{
 font-weight: bolder;
 }
-.caja{
 
-
-  
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items:flex-start;
-  
- 
-}
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
