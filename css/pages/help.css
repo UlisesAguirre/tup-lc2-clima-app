@@ -3,38 +3,53 @@
     
     align-self: center;
     display: flex;
-    width: 100%;
+    width: 70%;
     flex-direction: column;
-    align-items:flex-start;
+
     
     
    
   }
+  .caja p{
+    font-size: 15px;
+    align-items:flex-start;
+    font-weight: bolder;
+  }
   .carga{
-
+    font-size: 12px;
     -ms-flex-align: center;
     align-self: center;
     display: flex;
-    width: 100%;
+    width: 27%;
     flex-direction: column;
     align-items:center;
     
     
    
   }
-  label{
-   
-    text-align: start;
+
+#formu, label, input, textarea{
     width: 100%;
-  }
-#formu{
-    width: 17%;
     align-self: center;
     display: flex;
     
     flex-direction: column;
     align-items:center;
+    align-items: flex-start;
+    
 }
+input, textarea{
+  padding: 7px 22px;
+    
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+label{
+  margin-top: 5px;
+  font-weight: bolder;
+    
+}
+
   section{
 
 
@@ -48,7 +63,7 @@
   }
   .boton_caja{
 
-
+    margin-top: 10px;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -64,36 +79,41 @@
 
 
   .boton_azul{
-    height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #FFF;
+      background-color: #00594c;
+      border-radius: 9px;
+      border: none;
+      text-align: center;
+      width:auto;
+      padding: 10px 10px;
+      margin-top: 20px;
+      margin: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      
+    
+     
+  
    
-    font-weight: bold;
-    color: #FFF;
-    background-color: #00594c;
-    border-radius: 9px;
-    border: none;
-    text-align: center;
-    vertical-align: center;
-    box-sizing: border-box;
-    width: 7%;
-    padding: 10px;
-    margin-bottom: 20px;
-   
-    margin: 10px;
   }
-  .boton_naranja{
-    height: 30px;
-    vertical-align: center;
-    font-weight: bold;
-    color: #FFF;
-    background-color: #dc3545;
-    border-radius: 12px;
-    box-sizing: border-box;
-    border: none;
-    text-align: center;
-    width: 30%;
-    padding: 10px ;
-    margin-bottom: 20px;
-    font-size: x-small;
-   
-    margin-top: 20px;
+  .boton_naranja {
+    font-size: 10px;
+      font-weight: bold;
+      color: #FFF;
+      
+      background-color: #dc3545;
+      border-radius: 12px;
+      border: none;
+      text-align: center;
+      width:auto;
+      padding: 10px 100px;
+      margin-top: 20px;
+      margin: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+
   }
+
+  
