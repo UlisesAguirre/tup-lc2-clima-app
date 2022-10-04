@@ -28,7 +28,6 @@ button, a {
     user-select: none;
     -webkit-user-select: none;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -37,8 +36,6 @@ header {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-
-
 nav > ul {
     display: flex;
     justify-content: space-between;
@@ -150,3 +147,4 @@ font-weight: bolder;
         padding-bottom: 20px;
     }
 }
+
