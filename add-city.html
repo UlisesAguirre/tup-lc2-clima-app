@@ -27,20 +27,23 @@
         <section>
             <form action="" class="formulario">
                 <label for="ingresarCiudad"> Ingrese la ciudad a agregar:</label>
-                <input type="text" name="ingresarCiudad" id="ingresarCiudad"><br>
+                <input type="text" name="ingresarCiudad" id="ingresarCiudad" required><br>
                 <input type="submit" name="agregar" id="agregarCiudad" value="Agregar">
             </form>
         </section>
-        <section class="mensajes">
-            <p class="exito">Ciudad agregada con éxito</p>
-            <p class="error">Error: la ciudad ingresada no se encuentra en la API o se produjo un error al consultar</p>
-            <p class="existente">La ciudad ingresada ya se encuentra almacenada</p>
+        <section class="mensajes" id="mensajes">
+            <div id="contenedor-carga">
+                <div id="carga"></div>
+            </div>
         </section>
     </main>
     
     <footer>
         <p> Desarrollado con ♥ - LC2 </p>
     </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/pages/add-city.js"></script>
 </body>
 
 </html>
