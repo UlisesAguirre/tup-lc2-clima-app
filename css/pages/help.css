@@ -1,121 +1,132 @@
-.caja{
+.caja {
 
-    
-    align-self: center;
-    display: flex;
-    width: 70%;
-    flex-direction: column;
 
-    
-    
-  }
+  align-self: center;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
 
 
 
-  .caja p{
-    font-size: 15px;
-    align-items:flex-start;
-    font-weight: bolder;
-  }
-  .carga{
-    font-size: 12px;
-    -ms-flex-align: center;
-    align-self: center;
-    display: flex;
-    width: 27%;
-    flex-direction: column;
-    align-items:center;
-    
-    
-   
-  }
-
-#formu, label, input, textarea{
-    width: 100%;
-    align-self: center;
-    display: flex;
-    
-    flex-direction: column;
-    align-items:center;
-    align-items: flex-start;
-    
 }
-input, textarea{
+
+
+
+.caja p {
+  font-size: 15px;
+  align-items: flex-start;
+  font-weight: bolder;
+}
+
+.carga {
+  font-size: 12px;
+  -ms-flex-align: center;
+  align-self: center;
+  display: flex;
+  width: 27%;
+  flex-direction: column;
+  align-items: center;
+
+
+
+}
+
+#formu,
+label,
+input,
+textarea {
+  width: 100%;
+  align-self: center;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+
+}
+
+input,
+textarea {
   padding: 7px 22px;
-    
-    border: 1px solid #000;
-    border-radius: 5px;
+
+  border: 1px solid #000;
+  border-radius: 5px;
 }
-label{
+
+label {
   margin-top: 5px;
   font-weight: bolder;
-    
+
 }
 
-  section{
+section {
 
 
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-   
-  }
-  .boton_caja{
-
-    margin-top: 10px;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-   
-  }
-  textarea{
-    height: 150px;
-  }
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
 
+}
 
-  .boton_azul{
-      font-size: 12px;
-      font-weight: bold;
-      color: #FFF;
-      background-color: #00594c;
-      border-radius: 9px;
-      border: none;
-      text-align: center;
-      width:auto;
-      padding: 10px 10px;
-      margin-top: 20px;
-      margin: 5px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
-      
-    
-     
-  
-   
-  }
-  .boton_naranja {
-    font-size: 10px;
-      font-weight: bold;
-      color: #FFF;
-      
-      background-color: #dc3545;
-      border-radius: 12px;
-      border: none;
-      text-align: center;
-      width:auto;
-      padding: 10px 100px;
-      margin-top: 20px;
-      margin: 5px;
-      margin-bottom: 20px;
-      box-sizing: border-box;
+.boton_caja {
 
-  }
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-  
+
+}
+
+textarea {
+  height: 150px;
+}
+
+
+
+.boton_azul {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #00594c;
+  border-radius: 9px;
+  border: none;
+  text-align: center;
+  width: auto;
+  padding: 10px 10px;
+  margin-top: 20px;
+  margin: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+
+
+
+}
+
+.boton_naranja {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+
+  background-color: #dc3545;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  width: auto;
+  padding: 10px 100px;
+  margin: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+}
+
+#texto {
+  resize: none;
+}
