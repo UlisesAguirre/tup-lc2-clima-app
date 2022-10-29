@@ -1,4 +1,4 @@
-const apiUrl = 'api.openweathermap.org/data/2.5/weather?q={ciudad-a-consultar}&appid=6190b4038187836bda715744d37c0a11&units=metric&lang=es'
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q={nombreciudad}&appid=6190b4038187836bda715744d37c0a11&units=metric&lang=es'
 
 const boton = document.getElementById('agregarCiudad')
 const mensajes = document.getElementById('mensajes')
