@@ -3,7 +3,7 @@ document.onload = () => {
 };
 
 function loadLocalStorage() {
-    // La primera vez que se ingrese a la pagina permite crear previamente 
+    // La primera vez que se ingrese a la pagina permite crear previamente .
     // la clave 'CITIES' en el localStorage para ser utilizada posteriormente.
     let cities = getCitiesFromLocalStorage()
     if (cities == []) {

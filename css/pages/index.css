@@ -40,4 +40,14 @@ div.card p {
     margin-right: 20px;}
 .card h3{
         font-size: 19px;
+
 }
+#selectCity{
+    width: 62%;
+    padding: 8px 1px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box
+}
+

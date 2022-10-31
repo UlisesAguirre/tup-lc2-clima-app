@@ -7,6 +7,7 @@ function addCitiesToSelection() {
         selection.innerHTML += `<option disabled selected>No hay ciudades agregadas</option>`
     }
     else {
+   
         selection.innerHTML += `<option value="" disabled selected>Seleccionar Ciudad</option>`
         for (let i = 0; i < cities.length; i++) { 
             selection.innerHTML += `<option value="${cities[i]}">${cities[i]}</option>`
@@ -15,12 +16,21 @@ function addCitiesToSelection() {
 }
 
 async function Weather() {
-    const cargando = document.getElementById("carga");
-    cargando.style.display = 'block';
-    document.getElementById('showCard').style.display = 'none';
+
     let data = await API(selection.value);
-    cargando.style.display = 'none';
-    document.getElementById('showCard').style.display = 'block';
+    const spinner = document.getElementById('carga')
+    spinner.style.visibility = 'visible';/**/
+    
+    document.getElementById('showCard').style.visibility = 'hidden';
+ 
+    setTimeout(() => {/* comienzo Settime*************/
+      
+/* let data = await API(selection.value); lo pase a la linea 26 para que cargue la cuidades primero de todo*/
+/*const cargando = document.getElementById("carga");
+    cargando.style.display = 'none';*/
+    spinner.style.visibility = 'hidden';
+    document.getElementById('showCard').style.visibility = 'visible';
+}, 2000);/*Hasta ahi settinme**** */   
 
     const weatherData={
         ciudad: data.name,
@@ -47,7 +57,15 @@ async function Weather() {
         section.innerHTML = "";
         section.innerHTML += card;
     }
+
 }
+
+
+
+
+
+
+
 
 let weatherButton = document.getElementById("consultar");
 weatherButton.addEventListener("click", Weather)
