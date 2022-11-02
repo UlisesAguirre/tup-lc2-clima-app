@@ -27,15 +27,18 @@ function addNewCityToLocalStorage(newCity) {
 
         .then(data => {
             carga()
+            // Corroboramos de que la ciudad exita en la API
             if (data.cod === 200) {
                 let cities = getCitiesFromLocalStorage();
-    
+                // Verificamos que el input no este vacio
                 if (newCity.length !== 0) {
+                    // Comprobamos que no haya ciudades cargadas
                     if (cities.length === 0) {
                         mensajes.appendChild(exito)
                         cities.push(newCity);
                         localStorage.setItem("CITIES", JSON.stringify(cities));
                     } else {
+                        // De otro modo, corroboramos que no este cargada la misma ciudad
                         let validacion = false
                         cities.forEach(function (ciudad) {
                             if (ciudad === newCity) {
@@ -64,7 +67,7 @@ function addNewCityToLocalStorage(newCity) {
 
 
 
-
+    //Declaramos un tiempo de espera para ocultar los mensajes 
     setTimeout(() => {
 
 
