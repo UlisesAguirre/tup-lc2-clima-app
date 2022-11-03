@@ -127,6 +127,23 @@ textarea {
 
 }
 
+.boton_verde {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+
+  background-color: #28a745;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  width: auto;
+  padding: 10px 100px;
+  margin: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+}
+
 #texto {
   resize: none;
 }
